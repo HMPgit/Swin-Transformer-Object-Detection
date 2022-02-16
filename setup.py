@@ -21,7 +21,7 @@ def get_version():
         exec(compile(f.read(), version_file, 'exec'))
     return locals()['__version__']
 
-
+"""
 def make_cuda_ext(name, module, sources, sources_cuda=[]):
 
     define_macros = []
@@ -46,7 +46,7 @@ def make_cuda_ext(name, module, sources, sources_cuda=[]):
         sources=[os.path.join(*module.split('.'), p) for p in sources],
         define_macros=define_macros,
         extra_compile_args=extra_compile_args)
-
+"""
 
 def parse_requirements(fname='requirements.txt', with_version=True):
     """Parse the package dependencies listed in a requirements file but strips
