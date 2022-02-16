@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os
-from setuptools import find_packages, setup
+#from setuptools import find_packages, setup
 
 import torch
 from torch.utils.cpp_extension import (BuildExtension, CppExtension,
