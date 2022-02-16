@@ -41,7 +41,8 @@ def make_cuda_ext(name, module, sources, sources_cuda=[]):
         extension = CppExtension
 
     return extension(
-        name=f'{module}.{name}',
+        #name=f'{module}.{name}',
+        name = '{}.{}'.format(module, name),
         sources=[os.path.join(*module.split('.'), p) for p in sources],
         define_macros=define_macros,
         extra_compile_args=extra_compile_args)
